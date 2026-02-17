@@ -1,5 +1,11 @@
 public class OOPSBannerApp {
     public static void main(String[] args) {
-        System.out.println("OOPS");
+        System.out.println(" OOO    OOO   PPPPP   SSSSS");
+        System.out.println("O   O  O   O  P    P  S    ");
+        System.out.println("O   O  O   O  PPPPP   SSSSS");
+        System.out.println("O   O  O   O  P           S");
+        System.out.println("O   O  O   O  P           S");
+        System.out.println("O   O  O   O  P       S   S");
+        System.out.println(" OOO    OOO   P        SSSS");
     }
 }
