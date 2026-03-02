@@ -1,19 +1,57 @@
- public class BannerAppUC5 {
+public class BannerAppUC6 {
 
     public static void main(String[] args) {
 
-        String[] banner = {
-            String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"),
-            String.join("", "*", " ", "W", "E", "L", "C", "O", "M", "E", " ", "*"),
-            String.join("", "*", " ", "T", "O", " ", "O", "O", "P", "S", " ", "*"),
-            String.join("", "*", " ", "B", "A", "N", "N", "E", "R", " ", "*"),
-            String.join("", "*", " ", "A", "P", "P", " ", "U", "C", "5", " ", "*"),
-            String.join("", "*", " ", " ", " ", " ", " ", " ", " ", " ", "*"),
-            String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*")
+        String[][] letters = {
+                buildO(),
+                buildO(),
+                buildP(),
+                buildS()
         };
 
-        for (String line : banner) {
-            System.out.println(line);
+        for (int i = 0; i < 7; i++) {
+            System.out.println(
+                    letters[0][i] + "  " +
+                    letters[1][i] + "  " +
+                    letters[2][i] + "  " +
+                    letters[3][i]
+            );
         }
+    }
+
+    public static String[] buildO() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+    }
+
+    public static String[] buildP() {
+        return new String[]{
+                "****** ",
+                "*     *",
+                "*     *",
+                "****** ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+    }
+
+    public static String[] buildS() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*      ",
+                " ***** ",
+                "      *",
+                "*     *",
+                " ***** "
+        };
     }
 }
