@@ -5,5 +5,10 @@ public class Greeting {
         } else {
             System.out.println("Hello User");
         }
+<<<<<<< HEAD:uc2/Greeting.java
+=======
+
+        System.out.println("Hello  " + name);
+>>>>>>> feature/UC3:uc3/Greeting.java
     }
 }
