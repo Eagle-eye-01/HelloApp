@@ -10,5 +10,5 @@ public class Greeting {
             // Default fallback if no names are provided
             System.out.println("Hello World");
         }
-    }   
+    }
 }
